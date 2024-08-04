@@ -1,17 +1,17 @@
 // import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
+
 const App = () => {
   return (
-    <div className='App'>
-        <h1>App Component</h1>
-        <ul>
-          <li>Menu 1</li>
-          <li>Menu 2</li>
-          <li>Menu 3</li>
-        </ul>
-        <div>เนื้อหาส่วนที่ 1</div>
-        <div>เนื้อหาส่วนที่ 2</div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' exact={true} element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </Router>
   );
 
 }

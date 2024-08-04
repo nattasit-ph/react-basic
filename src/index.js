@@ -1,26 +1,22 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import {BrowserRouter as Router} from 'react-router-dom'
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/main.scss'; // import bootstrap scss style
+// import './index.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 import App from './App';
-import About from './basic/About';
-import Contact from './basic/Contact';
 import reportWebVitals from './reportWebVitals';
-import ServiceClassComponent from './basic/ServiceClassComponent';
-import ServiceFunctionalComponent from './basic/ServiceFunctionalComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
-  <StrictMode>
-    <App />
-    {/* <About /> */}
-    {/* <Contact /> */}
-    {/* <ServiceClassComponent /> */}
-    {/* <ServiceFunctionalComponent /> */}
-
-  </StrictMode>
+  <React.StrictMode>
+    {/* <Router> */}
+      <App />
+    {/* </Router> */}
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
