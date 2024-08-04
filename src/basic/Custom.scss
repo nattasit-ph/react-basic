@@ -1,0 +1,10 @@
+$primary_color: teal;
+
+h1 {
+    color: $primary_color
+}
+
+p {
+    background: $primary_color;
+    color: #fff !important;
+}

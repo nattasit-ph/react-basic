@@ -1,15 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import About from './About';
-
-// Componenet function
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>App Component</h1>
-      <About />
+    <div className='App'>
+        <h1>App Component</h1>
+        <ul>
+          <li>Menu 1</li>
+          <li>Menu 2</li>
+          <li>Menu 3</li>
+        </ul>
+        <div>เนื้อหาส่วนที่ 1</div>
+        <div>เนื้อหาส่วนที่ 2</div>
     </div>
   );
+
 }
 
 // // Arror function

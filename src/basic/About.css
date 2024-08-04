@@ -1,0 +1,11 @@
+.About {
+    .myStyle {
+        color:teal;
+        font-size: 30px;
+        border: 2px solid #61dafb;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: left;
+    }
+    
+}
