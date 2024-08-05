@@ -4,7 +4,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
-            <a className="navbar-brand" href="#">React-Basic</a>
+            {/* <a className="navbar-brand" href="#">React-Basic</a> */}
+            <NavLink to="/" className="navbar-brand">React-Basic</NavLink>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
             </button>
@@ -15,6 +16,12 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                     <NavLink to="/about" className="nav-link" activeClassName="active" exact>About</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/cart" className="nav-link" activeClassName="active" exact>Cart</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/counter" className="nav-link" activeClassName="active" exact>Counter</NavLink>
                 </li>
                 {/* <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
